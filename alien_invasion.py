@@ -17,6 +17,7 @@ class AlienInvasion:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+        pygame.display.flip()
 
 
 if __name__ == '__main__':
