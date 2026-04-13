@@ -19,7 +19,7 @@ class Arsenal:
             bullet.draw_bullet()
         
     def fire_bullet(self):
-        if len(self.arsenal) < self.settings.bullet_ammount:
+        if len(self.arsenal) < self.settings.bullet_amount:
             new_bullet = Bullet(self.game)
             self.arsenal.add(new_bullet)
             return True
