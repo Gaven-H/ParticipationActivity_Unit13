@@ -24,6 +24,7 @@ class AlienInvasion:
 
         pygame.mixer.init()
         self.laser_sound = pygame.mixer.Sound(self.settings.laser_sound)
+        self.laser_sound.set_volume(0.7)
 
         self.ship = Ship(self, Arsenal(self))
 
