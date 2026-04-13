@@ -5,3 +5,5 @@ if TYPE_CHECKING:
     from alien_invasion import AlienInvasion
 
 class ShipArsenal:
+    def __init__(self, game: "AlienInvasion") -> None:
+        
