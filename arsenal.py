@@ -11,4 +11,4 @@ class ShipArsenal:
         self.arsenal = pygame.sprite.Group()
 
     def update_arsenal (self) -> None:
-        
+        self.arsenal.update()
