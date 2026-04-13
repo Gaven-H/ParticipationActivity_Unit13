@@ -8,3 +8,5 @@ if TYPE_CHECKING:
 class Bullet(Sprite):
     def __init__(self, game: "AlienInvasion") -> None:
         super().__init__()
+        self.screen = game.screen
+        self.screen = game.settings
