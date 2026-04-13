@@ -70,6 +70,7 @@ class AlienInvasion:
         elif event.key == pygame.K_SPACE:
                 if self.ship.fire_method():
                     self.laser_sound.play
+                    self.laser_sound.fadeout(250)
         
         elif event.key == pygame.K_q:
             self.running = False
