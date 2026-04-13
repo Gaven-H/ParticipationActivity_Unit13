@@ -22,3 +22,4 @@ class ShipArsenal:
             new_bullet = Bullet(self.game)
             self.arsenal.add(new_bullet)
             return True
+        return False
