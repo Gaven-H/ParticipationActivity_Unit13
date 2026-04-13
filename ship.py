@@ -29,7 +29,7 @@ class Ship:
         if self.moving_right and self.rect.right < self.boundries.right:
             self.x += temp_speed
         
-        if self.moving_left:
+        if self.moving_left and self.rect.left < self.boundries.left:
             self.x -= temp_speed
         
         self.rect.x = self.x
