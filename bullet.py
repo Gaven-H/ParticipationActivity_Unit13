@@ -8,7 +8,6 @@ if TYPE_CHECKING:
 class Bullet(Sprite):
     def __init__(self, game: "AlienInvasion") -> None:
         super().__init__()
-        self.game = game
         self.screen = game.screen
         self.screen = game.settings
 
@@ -18,3 +17,4 @@ class Bullet(Sprite):
              )
         
         self.rect = self.image.get_rect()
+        self.rect.midtop = game.ship.rect.midtop
