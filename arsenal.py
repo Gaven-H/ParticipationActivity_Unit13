@@ -16,3 +16,5 @@ class ShipArsenal:
     def draw(self) -> None:
         for bullet in self.arsenal:
             bullet.draw_bullet()
+        
+    def fire_bullet(self):
