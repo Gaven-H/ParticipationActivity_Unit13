@@ -65,6 +65,7 @@ class AlienInvasion:
 
         elif event.key == pygame.K_SPACE:
             if self.ship.fire_method():
+                self.ship.fire_method
                 #play laser sound
         
         elif event.key == pygame.K_q:
