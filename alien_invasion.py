@@ -21,6 +21,8 @@ class AlienInvasion:
         self.running = True
         self.clock = pygame.time.Clock()
 
+        self.ship = Ship(self)
+
     def run_game(self):
         # Game Loop
         while self.running:
