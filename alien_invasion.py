@@ -42,6 +42,7 @@ class AlienInvasion:
     def _update_screen(self) -> None:
         self.screen.blit(self.bg, (0,0))
         self.ship.draw()
+        self.alien.draw_alien()
         pygame.display.flip()
 
     def _check_events(self) -> None:
