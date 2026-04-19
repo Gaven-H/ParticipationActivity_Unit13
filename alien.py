@@ -12,9 +12,9 @@ class Alien(Sprite):
         self.boundries = game.screen.get_rect()
         self.settings = game.settings
 
-        self.image= pygame.image.load(self.settings.bullet_file)
+        self.image= pygame.image.load(self.settings.alien_file)
         self.image= pygame.transform.scale(self.image,
-            (self.settings.bullet_w, self.settings.bullet_h)
+            (self.settings.alien_w, self.settings.alien_h)
              )
         
         self.rect = self.image.get_rect()
@@ -22,7 +22,7 @@ class Alien(Sprite):
         self.y = float(self.rect.y)
 
     def update(self):
-        self.y -= self.settings.bullet_speed
+        self.y -= self.settings.fleet_speed
         self.rect.y = self.y
 
     def draw_alien(self) -> None:
