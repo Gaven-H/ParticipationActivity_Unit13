@@ -3,6 +3,7 @@ import pygame
 from settings import Settings
 from ship import Ship
 from arsenal import Arsenal
+from alien import Alien
 
 class AlienInvasion:
     def __init__(self) -> None:
