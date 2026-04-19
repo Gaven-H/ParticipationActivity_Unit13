@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from alien_invasion import AlienInvasion
 
-class Bullet(Sprite):
+class Alien(Sprite):
     def __init__(self, game: "AlienInvasion") -> None:
         super().__init__()
         self.screen = game.screen
@@ -24,5 +24,5 @@ class Bullet(Sprite):
         self.y -= self.settings.bullet_speed
         self.rect.y = self.y
 
-    def draw_bullet(self) -> None:
+    def draw_alien(self) -> None:
         self.screen.blit(self.image, self.rect)
