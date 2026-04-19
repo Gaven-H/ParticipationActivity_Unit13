@@ -18,8 +18,9 @@ class Alien(Sprite):
              )
         
         self.rect = self.image.get_rect()
-        self.rect.midtop = game.ship.rect.midtop
-        self.y = float(self.rect.y)
+        self.rect.x = x
+        self.rect.y = y
+        # self.y = float(self.rect.y)
 
     def update(self):
         self.y -= self.settings.fleet_speed
