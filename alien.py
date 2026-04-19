@@ -9,6 +9,7 @@ class Alien(Sprite):
     def __init__(self, game: "AlienInvasion", x: float, y: float) -> None:
         super().__init__()
         self.screen = game.screen
+        self.boundries = game.screen.get_rect()
         self.settings = game.settings
 
         self.image= pygame.image.load(self.settings.bullet_file)
