@@ -6,7 +6,7 @@ if TYPE_CHECKING:
     from alien_invasion import AlienInvasion
 
 class Alien(Sprite):
-    def __init__(self, game: "AlienInvasion") -> None:
+    def __init__(self, game: "AlienInvasion", x: float, y: float) -> None:
         super().__init__()
         self.screen = game.screen
         self.settings = game.settings
