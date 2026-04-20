@@ -37,7 +37,12 @@ class AlienFleet:
         else:
             fleet_w -= 2
 
-        return fleet_w
+        if fleet_h % 2 == 0:
+            fleet_h -= 1
+        else:
+            fleet_w -= 2
+
+        return fleet_w, fleet_h
     
     def _create_alien(self, current_x: int, current_y: int):
      new_alien = Alien(self, current_x, current_y)
