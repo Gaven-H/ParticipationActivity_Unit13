@@ -55,7 +55,9 @@ class AlienInvasion:
         pass
 
     def _reset_level(self) -> None:
-        pass
+        self.ship.arsenal.arsenal.empty()
+        self.alien_fleet.fleet.empty()
+        self.alien_fleet.create_fleet()
 
     def _update_screen(self) -> None:
         self.screen.blit(self.bg, (0,0))
