@@ -41,6 +41,9 @@ class AlienInvasion:
             self._update_screen()
             self.clock.tick(self.settings.FPS)
 
+
+    def _check_collisions(self) -> None:
+
     def _update_screen(self) -> None:
         self.screen.blit(self.bg, (0,0))
         self.ship.draw()
