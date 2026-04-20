@@ -15,7 +15,9 @@ class AlienFleet:
     
     def create_fleet(self) -> None:
         alien_w = self.settings.alien_w
+        alien_h = self.settings.alien_h
         screen_w = self.game.settings.screen_w
+        screen_h = self.game.settings.screen_h
 
         fleet_w = self.calculate_fleet_size(alien_w, screen_w)
         fleet_horizontal_space = fleet_w * alien_w
