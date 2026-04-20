@@ -46,3 +46,6 @@ class Ship:
 
     def fire_method(self) -> bool:
         return self.arsenal.fire_bullet()
+    
+    def check_collisions(self, other_group):
+        
