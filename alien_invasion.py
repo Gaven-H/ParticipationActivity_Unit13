@@ -11,7 +11,7 @@ class AlienInvasion:
     def __init__(self) -> None:
         pygame.init()
         self.settings = Settings()
-        self.game_stats = GameStats
+        self.game_stats = GameStats(self.settings.starting_ship_count)
 
         self.screen = pygame.display.set_mode(
             (self.settings.screen_w,self.settings.screen_h)
@@ -66,6 +66,7 @@ class AlienInvasion:
             self._reset_level()
         
     def _check_game_status(self):
+        pass
 
     def _reset_level(self) -> None:
         self.ship.arsenal.arsenal.empty()
