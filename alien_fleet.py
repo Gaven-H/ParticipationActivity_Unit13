@@ -93,7 +93,5 @@ class AlienFleet:
                 return True
         return False
     
-    def check_destroyed_status(self) -> bool:
-         if not self.fleet:
-            return True
-         return False
+    def check_destroyed_status(self):
+        return self.fleet
