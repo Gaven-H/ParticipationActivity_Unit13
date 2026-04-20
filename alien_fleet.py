@@ -82,3 +82,5 @@ class AlienFleet:
         aline = 'Alien'
         for alien in self.fleet:
             alien.draw_alien()
+
+    def check_collisions(self, other_group):
