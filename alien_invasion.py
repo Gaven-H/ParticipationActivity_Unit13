@@ -43,6 +43,12 @@ class AlienInvasion:
 
 
     def _check_collisions(self) -> None:
+        #check collisions for ship
+
+        #check collisions for aliens and bottom of screen
+        
+        #check collisions of projectiles and aliens
+
 
     def _update_screen(self) -> None:
         self.screen.blit(self.bg, (0,0))
