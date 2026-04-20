@@ -38,3 +38,5 @@ class AlienFleet:
     
 def _create_alien(self, current_x: int, current_y: int):
     new_alien = Alien(self, current_x, current_y)
+
+    self.fleet.add(new_alien)
