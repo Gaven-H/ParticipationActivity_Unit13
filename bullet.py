@@ -20,7 +20,7 @@ class Bullet(Sprite):
         self.rect.midtop = game.ship.rect.midtop
         self.y = float(self.rect.y)
 
-    def update(self):
+    def update(self) -> None:
         self.y -= self.settings.bullet_speed
         self.rect.y = self.y
 
