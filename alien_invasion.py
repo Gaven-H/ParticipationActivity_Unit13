@@ -44,7 +44,11 @@ class AlienInvasion:
 
     def _check_collisions(self) -> None:
         #check collisions for ship
-
+        if self.ship.check_collisions(self.alien_fleet.fleet):
+            #alien fleet reset
+            #reset ship to center
+            #subtract one life
+            pass
         #check collisions for aliens and bottom of screen
 
         #check collisions of projectiles and aliens
