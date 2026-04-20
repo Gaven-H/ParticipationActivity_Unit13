@@ -31,6 +31,7 @@ class AlienFleet:
 
     def calculate_fleet_size(self, alien_w, screen_w, alien_h, screen_h) -> any:
         fleet_w = (screen_w//alien_w)
+        fleet_h = ((screen_h/2)//alien_h)
         if fleet_w % 2 == 0:
             fleet_w -=1
         else:
