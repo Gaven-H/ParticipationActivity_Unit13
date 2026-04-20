@@ -37,6 +37,7 @@ class AlienInvasion:
         self.ship = Ship(self, Arsenal(self))
         self.alien_fleet = AlienFleet(self)
         self.alien_fleet.create_fleet()
+        self.game_active = True
 
     def run_game(self) -> None:
         # Game Loop
@@ -72,6 +73,8 @@ class AlienInvasion:
             self.game_stats.ships_left -= 1
             self._reset_level()
             sleep[0.5]
+        else:
+            self.game_active = False
 
         print(self.game_stats.ships_left)
 
