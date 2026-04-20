@@ -61,6 +61,8 @@ class AlienFleet:
      new_alien = Alien(self, current_x, current_y)
      
      self.fleet.add(new_alien)
+
+    def update(self):
     
     def draw(self) -> None:
         aline = 'Alien'
