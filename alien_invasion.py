@@ -50,6 +50,9 @@ class AlienInvasion:
         #check collisions of projectiles and aliens
         pass
 
+    def _reset_level(self) -> None:
+
+
 
     def _update_screen(self) -> None:
         self.screen.blit(self.bg, (0,0))
