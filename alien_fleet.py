@@ -62,6 +62,9 @@ class AlienFleet:
      
      self.fleet.add(new_alien)
 
+     def _check_fleet_edges(self):
+         
+
     def update_fleet(self) -> None:
         self.fleet.update()
     
