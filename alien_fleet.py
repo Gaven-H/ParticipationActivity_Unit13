@@ -14,4 +14,5 @@ class AlienFleet:
         self.fleet_drop_speed = self.settings.fleet_drop_speed
     
     def create_fleet(self) -> None:
-        
+        alien_w = self.settings.alien_w
+        screen_w = self.game.settings.screen_w
