@@ -16,3 +16,5 @@ class AlienFleet:
     def create_fleet(self) -> None:
         alien_w = self.settings.alien_w
         screen_w = self.game.settings.screen_w
+
+        fleet_w = (screen_w//alien_w)
