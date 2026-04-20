@@ -47,5 +47,8 @@ class Ship:
     def fire_method(self) -> bool:
         return self.arsenal.fire_bullet()
     
-    def check_collisions(self, other_group):
-        
+    def check_collisions(self, other_group) -> bool:
+        if pygame.sprite.spritecollideany(self, other_group):
+            self._center_ship()
+            return True
+        return False
