@@ -4,6 +4,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from alien_invasion import AlienInvasion
+    from alien import Alien
 
 class AlienFleet:
     def __init__(self, game: 'AlienInvasion'):
@@ -37,5 +38,3 @@ class AlienFleet:
     
 def _create_alien(self, current_x: int, current_y: int):
     
-
-        
