@@ -51,8 +51,7 @@ class AlienInvasion:
         pass
 
     def _reset_level(self) -> None:
-
-
+        pass
 
     def _update_screen(self) -> None:
         self.screen.blit(self.bg, (0,0))
