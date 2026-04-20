@@ -69,7 +69,9 @@ class AlienFleet:
                self.fleet_direction *= -1
                break
     
-    def _alien_fleet_drop() -> None:
+    def _alien_fleet_drop(self) -> None:
+        for alien in self.fleet:
+            alien.rect.y += self.fleet_drop_speed
 
     def update_fleet(self) -> None:
         self._check_fleet_edges()
