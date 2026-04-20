@@ -31,6 +31,7 @@ class AlienFleet:
 
             for col in range(fleet_w):
                 current_x = alien_w * col + x_offset
+                current_y = alien_h * row + y_offset
                 if col % 2 == 0:
                     continue
                 self._create_alien(current_x, 10)
