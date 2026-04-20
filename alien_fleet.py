@@ -34,5 +34,8 @@ class AlienFleet:
             fleet_w -= 2
 
         return fleet_w
+    
+def _create_alien(self, current_x: int, current_y: int):
+    
 
         
