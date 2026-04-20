@@ -66,6 +66,7 @@ class AlienFleet:
        alien: Alien
        for alien in self.fleet:
            if alien.check_edges():
+               self._alien_fleet_drop()
                self.fleet_direction *= -1
                break
     
