@@ -19,6 +19,7 @@ class AlienFleet:
 
         fleet_w = self.calculate_fleet_size(alien_w, screen_w)
         fleet_horizontal_space = fleet_w * alien_w
+        x_offset = int((screen_w - fleet_horizontal_space)//2)
 
     def calculate_fleet_size(self, alien_w, screen_w):
         fleet_w = (screen_w//alien_w)
