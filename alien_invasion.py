@@ -62,6 +62,8 @@ class AlienInvasion:
         
         if self.alien_fleet.check_destroyed_status():
             self._reset_level()
+        
+    def _check_game_status(self):
 
     def _reset_level(self) -> None:
         self.ship.arsenal.arsenal.empty()
