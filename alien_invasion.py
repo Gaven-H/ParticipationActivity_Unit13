@@ -36,8 +36,8 @@ class AlienInvasion:
         # Game Loop
         while self.running:
             self._check_events()
-            # self.ship.update()
-            self.alien.update()
+            self.ship.update()
+           # self.alien.update()
             self._update_screen()
             self.clock.tick(self.settings.FPS)
 
