@@ -18,11 +18,15 @@ class Ship:
              )
         
         self.rect = self.image.get_rect()
-        self.rect.midbottom = self.boundries.midbottom
+        self._center_ship()
         self.moving_right = False
         self.moving_left = False
-        self.x = float(self.rect.x)
+        
         self.arsenal = arsenal
+
+    def _center_ship(self):
+        self.rect.midbottom = self.boundries.midbottom
+        self.x = float(self.rect.x)
 
     def update(self) -> None:
         # Updating the position of the ship
