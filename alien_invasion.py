@@ -51,6 +51,7 @@ class AlienInvasion:
         #check collisions for aliens and bottom of screen
 
         #check collisions of projectiles and aliens
+        collisions = self.alien_fleet.check_collisions(self.ship.arsenal.arsenal)
 
     def _reset_level(self) -> None:
         self.ship.arsenal.arsenal.empty()
