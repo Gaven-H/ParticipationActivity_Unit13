@@ -69,6 +69,8 @@ class AlienInvasion:
         if self.game_stats.ships_left > 0:
             self.game_stats.ships_left -= 1
             self._reset_level
+            
+        print(self.game_stats.ships_left)
 
     def _reset_level(self) -> None:
         self.ship.arsenal.arsenal.empty()
