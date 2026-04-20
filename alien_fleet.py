@@ -7,4 +7,8 @@ if TYPE_CHECKING:
 
 class AlienFleet:
     def __init__(self, game: 'AlienInvasion'):
-        
+        self.game = game
+        self.settings = game.settings
+        self.fleet = pygame.sprite.Group()
+        self.fleet_direction = self.settings.fleet_direction
+        self.fleet_drop_speed = self.settings.fleet_drop_speed
