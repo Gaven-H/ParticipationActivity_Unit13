@@ -70,6 +70,7 @@ class AlienInvasion:
         if self.game_stats.ships_left > 0:
             self.game_stats.ships_left -= 1
             self._reset_level()
+            sleep[0.5]
 
         print(self.game_stats.ships_left)
 
