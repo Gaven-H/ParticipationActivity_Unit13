@@ -69,6 +69,7 @@ class AlienFleet:
                self.fleet_direction *= -1
 
     def update_fleet(self) -> None:
+        self._check_fleet_edges()
         self.fleet.update()
     
     def draw(self) -> None:
