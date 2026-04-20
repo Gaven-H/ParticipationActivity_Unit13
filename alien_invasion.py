@@ -6,6 +6,7 @@ from arsenal import Arsenal
 # from alien import Alien
 from alien_fleet import AlienFleet
 from game_stats import GameStats
+from time import time
 
 class AlienInvasion:
     def __init__(self) -> None:
