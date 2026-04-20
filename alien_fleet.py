@@ -18,3 +18,8 @@ class AlienFleet:
         screen_w = self.game.settings.screen_w
 
         fleet_w = (screen_w//alien_w)
+        
+        if fleet_w % 2 == 0:
+            fleet_w -=1
+        else:
+            fleet_w -= 2
