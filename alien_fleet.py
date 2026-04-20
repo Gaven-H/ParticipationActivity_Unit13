@@ -37,4 +37,4 @@ class AlienFleet:
         return fleet_w
     
 def _create_alien(self, current_x: int, current_y: int):
-    new_alien = Alien()
+    new_alien = Alien(self, current_x, current_y)
