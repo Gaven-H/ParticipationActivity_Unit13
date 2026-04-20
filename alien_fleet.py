@@ -62,8 +62,11 @@ class AlienFleet:
      
      self.fleet.add(new_alien)
 
-     def _check_fleet_edges(self):
-         
+    def _check_fleet_edges(self):
+       alien: Alien
+       for alien in self.fleet:
+           if alien.check_edges():
+               self.fleet_direction *= -1
 
     def update_fleet(self) -> None:
         self.fleet.update()
