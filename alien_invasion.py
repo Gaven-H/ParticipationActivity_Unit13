@@ -46,8 +46,9 @@ class AlienInvasion:
         #check collisions for ship
 
         #check collisions for aliens and bottom of screen
-        
+
         #check collisions of projectiles and aliens
+        pass
 
 
     def _update_screen(self) -> None:
