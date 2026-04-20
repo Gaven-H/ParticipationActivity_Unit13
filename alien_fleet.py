@@ -29,9 +29,8 @@ class AlienFleet:
                 continue
             self._create_alien(current_x, 10)
 
-    def calculate_fleet_size(self, alien_w, screen_w):
+    def calculate_fleet_size(self, alien_w, screen_w, alien_h, screen_h) -> any:
         fleet_w = (screen_w//alien_w)
-        
         if fleet_w % 2 == 0:
             fleet_w -=1
         else:
