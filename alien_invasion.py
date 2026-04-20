@@ -29,7 +29,8 @@ class AlienInvasion:
         self.laser_sound.set_volume(0.7)
 
         self.ship = Ship(self, Arsenal(self))
-        self.alien_fleet = AlienFleet
+        self.alien_fleet = AlienFleet(self)
+        self.alien_fleet.create_fleet()
 
     def run_game(self) -> None:
         # Game Loop
